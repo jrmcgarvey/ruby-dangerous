@@ -11,7 +11,7 @@ module Palindrome
 
     # Returns content for palindrome testing.
     def processed_content
-      self.to_s.downcase
+      a=self.to_s.downcase.scan(/[a-z0-9]+/).join("")
     end
 end
 
